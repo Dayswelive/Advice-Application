@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+:root {
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "manrope", sans-serif;
+  background: var(--Dark-Blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.card {
+  background: var(--Dark-Grayish-Blue);
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+  border-radius: 13px;
+  position: relative;
+}
+.title {
+  color: var(--Neon-Green);
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 3px;
+  padding-bottom: 14px;
+}
+.advice {
+  font-size: 20px;
+  color: white;
+  letter-spacing: 1.1px;
+  margin-bottom: 20px;
+}
+
+.divider {
+  width: 95%;
+  display: block;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+
+.btn {
+  position: absolute;
+  left: 50%;
+  bottom: -35px;
+  transform: translate(-50%);
+  background: var(--Neon-Green);
+  border: none;
+  padding: 15px 17px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 425px) {
+  .card {
+    margin: 0 12px;
+    padding: 20px;
+  }
+} ;
